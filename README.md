@@ -35,7 +35,8 @@ factory/
   
   ## Build
   1. 构建
-  ./tools/build_without_lib_update.sh
+  ```./tools/build_without_lib_update.sh```
+  
   ### Test
   
 ## Tips
