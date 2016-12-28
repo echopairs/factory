@@ -17,9 +17,9 @@ factory/
   |- tools/             构建/发布/测试等相关脚本 
   |- main.cpp			入口函数 
   ```
- ## Requirement
   
-  ### Tools
+## Requirement
+### Tools
   1. cmake >= 3.5
   2. g++5.3.1
   3. ftp
