@@ -3,6 +3,7 @@ Task-based project based on the abstract factory pattern
 
 ## Introduction
 factory/
+
   |- bin/               项目构建生成的二进制输出目录（排除在版本控制库之外） 
   |- build/             项目构建的工作目录 （排除在版本控制库之外） 
   |- include/           发布需要的头文件目录 
