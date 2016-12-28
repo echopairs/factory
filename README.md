@@ -15,19 +15,19 @@ factory/
   |- tools/             构建/发布/测试等相关脚本 
   |- main.cpp			入口函数 
   
- ## Requirement
+ ##Requirement
   
-  ### Tools
+  ###Tools
   1. cmake >= 3.5
   2. g++5.3.1
   3. ftp
   
-  ## Build
+  ##Build
   1. 构建
   ./tools/build_without_lib_update.sh
   ### Test
   
-## Tips
+##Tips
 1. 每个进程中含有一个process实例
 2. process实例中可注册多个runner
 3. 每个runner中含有一个工厂,生产一类任务，已实现url runner
