@@ -1,0 +1,13 @@
+[Unit]
+Description=Factory Project demo
+After=network.target
+Wants=network.target
+
+[Service]
+Type=forking
+ExecStart=/opt/factory/bin/tasks &
+ExecReload=/usr/bin/kill -HUP $MAINPID
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

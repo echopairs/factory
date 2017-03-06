@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 2.8)
 project(tasks)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g")
@@ -22,3 +22,10 @@ set(SOURCE_FILES main.cpp
         include/utils/time.h)
 add_executable(tasks ${SOURCE_FILES})
 target_link_libraries(tasks pthread)
+
+# ADD BY linjian 2017/03/05 12:33:00
+SET(EXECUTABLE_OUTPUT_PATH ${tasks_SOURCE_DIR}/build/release/bin)
+
+SET(CMAKE_INSTALL_PREFIX "/opt")
+INSTALL(DIRECTORY ${tasks_SOURCE_DIR}/build/release/bin DESTINATION factory/)
+INSTALL(DIRECTORY ${tasks_SOURCE_DIR}/build/release/doc DESTINATION factory/)
