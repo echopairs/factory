@@ -16,20 +16,37 @@ factory/
   |   |- url              	url处理模块  
   |- tools/             构建/发布/测试等相关脚本 
   |- main.cpp			入口函数 
-  ```
-  
+```
+
 ## Requirement
 ### Tools
   1. cmake >= 3.5
   2. g++5.3.1
   3. ftp
-  
+
   ## Build
-  1. 构建
-  ```./tools/build_without_lib_update.sh```
-  
+1.   构建
+       ```./tools/build_without_lib_update.sh```
+
+2.   安装
+
+     ```shell
+     cd ./tools
+     rpm -ivh factory-1.0.0-1.x86_64.rpm
+     rpm -ivh factory-debug-1.0.0-1.x86_64.rpm
+     ```
+
+3.   构建系统服务
+
+     ```shell
+     cp ./tools/factory.service /usr/lib/systemd/system/
+     systemctl daemon-reload
+     ```
+
+     ​
+
   ### Test
-  
+
 ## Tips
 1. 每个进程中含有一个process实例
 2. process实例中可注册多个runner
